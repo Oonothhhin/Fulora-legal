@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support - Fulora</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 50px 40px;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+            padding-bottom: 30px;
+            border-bottom: 2px solid #f0f0f0;
+        }
+
+        h1 {
+            color: #1d1d1f;
+            font-size: 2.5em;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            color: #667eea;
+            font-size: 1.2em;
+            font-weight: 500;
+        }
+
+        h2 {
+            color: #1d1d1f;
+            font-size: 1.8em;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+
+        h3 {
+            color: #667eea;
+            font-size: 1.3em;
+            margin-top: 25px;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+
+        p {
+            color: #515154;
+            margin-bottom: 15px;
+            font-size: 1.05em;
+        }
+
+        .contact-box {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 15px;
+            margin: 30px 0;
+            text-align: center;
+        }
+
+        .contact-box h2 {
+            color: white;
+            margin-top: 0;
+        }
+
+        .contact-box p {
+            color: white;
+            font-size: 1.1em;
+        }
+
+        .contact-email {
+            display: inline-block;
+            background: white;
+            color: #667eea;
+            padding: 15px 30px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1em;
+            margin-top: 15px;
+            transition: all 0.3s ease;
+        }
+
+        .contact-email:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        .faq-item {
+            margin-bottom: 30px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 10px;
+            border-left: 4px solid #667eea;
+        }
+
+        .faq-question {
+            font-weight: 600;
+            color: #1d1d1f;
+            font-size: 1.15em;
+            margin-bottom: 10px;
+        }
+
+        .faq-answer {
+            color: #515154;
+            line-height: 1.7;
+        }
+
+        .links {
+            display: flex;
+            gap: 15px;
+            margin: 30px 0;
+            flex-wrap: wrap;
+        }
+
+        .link-button {
+            display: inline-block;
+            padding: 12px 25px;
+            background: #667eea;
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .link-button:hover {
+            background: #5568d3;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+        }
+
+        .link-button.secondary {
+            background: #764ba2;
+        }
+
+        .link-button.secondary:hover {
+            background: #653a8c;
+            box-shadow: 0 5px 15px rgba(118, 75, 162, 0.4);
+        }
+
+        .info-box {
+            background: #e8f4f8;
+            border-left: 4px solid #667eea;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+
+        .footer {
+            margin-top: 50px;
+            padding-top: 30px;
+            border-top: 2px solid #f0f0f0;
+            text-align: center;
+            color: #86868b;
+            font-size: 0.9em;
+        }
+
+        ul {
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
+
+        li {
+            color: #515154;
+            margin-bottom: 8px;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 30px 20px;
+            }
+
+            h1 {
+                font-size: 2em;
+            }
+
+            h2 {
+                font-size: 1.5em;
+            }
+
+            .links {
+                flex-direction: column;
+            }
+
+            .link-button {
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Fulora Support</h1>
+            <p class="subtitle">We're here to help</p>
+        </header>
+
+        <div class="contact-box">
+            <h2>Contact Information</h2>
+            <p>Have questions or need assistance? Reach out to us:</p>
+            <a href="mailto:fulora.dev@gmail.com" class="contact-email">fulora.dev@gmail.com</a>
+            <p style="margin-top: 20px; font-size: 0.95em;">We typically respond within 24-48 hours</p>
+            <div style="margin-top: 25px; padding-top: 20px; border-top: 1px solid rgba(255,255,255,0.3);">
+                <p style="font-size: 0.95em; margin-bottom: 5px;"><strong>Developer:</strong> Fulora</p>
+                <p style="font-size: 0.95em; margin-bottom: 5px;"><strong>Email:</strong> fulora.dev@gmail.com</p>
+            </div>
+        </div>
+
+        <section>
+            <h2>Frequently Asked Questions</h2>
+
+            <div class="faq-item">
+                <div class="faq-question">What is Fulora?</div>
+                <div class="faq-answer">
+                    Fulora is your personal reading companion for iOS. It helps you build consistent reading habits, track your progress, organize your reading materials, and sync your library across devices. Whether you're reading PDFs, books, or documents, Fulora makes it easy to stay on top of your reading goals.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">How do I import books or PDFs?</div>
+                <div class="faq-answer">
+                    You can import files in several ways:
+                    <ul>
+                        <li>Tap the "+" button in your library</li>
+                        <li>Use the iOS Share Sheet from other apps</li>
+                        <li>Import from Files app</li>
+                        <li>Open files directly from email or cloud storage</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">How does reading progress tracking work?</div>
+                <div class="faq-answer">
+                    Fulora automatically tracks your reading progress as you read. You can view your daily reading time, pages read, and maintain reading streaks. Your progress syncs across devices when you're signed in.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">What are Collections?</div>
+                <div class="faq-answer">
+                    Collections allow you to organize your books into custom categories. You can create collections for different topics, reading goals, or any way you prefer to organize your library. Books can be added to multiple collections.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">How do I sync my library across devices?</div>
+                <div class="faq-answer">
+                    Sign in with your Google account to enable cloud sync. Your library, collections, bookmarks, and reading progress will automatically sync across all your devices where you're signed in.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Can I annotate and highlight in PDFs?</div>
+                <div class="faq-answer">
+                    Yes! Fulora supports PDF annotations including highlighting, underlining, and drawing with Apple Pencil. Your annotations are saved and synced across devices.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Is my data private and secure?</div>
+                <div class="faq-answer">
+                    Yes, your privacy is our priority. Your reading data is stored securely, and we never share your personal information with third parties. For more details, please read our <a href="/privacy-policy.html" style="color: #667eea; text-decoration: none; font-weight: 600;">Privacy Policy</a>.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">What file formats does Fulora support?</div>
+                <div class="faq-answer">
+                    Fulora currently supports PDF files. Support for additional formats is planned for future updates.
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Report a Bug or Issue</h2>
+            <p>If you encounter any problems or bugs while using Fulora, please let us know:</p>
+
+            <div class="info-box">
+                <p><strong>When reporting issues, please include:</strong></p>
+                <ul>
+                    <li>A clear description of the problem</li>
+                    <li>Steps to reproduce the issue</li>
+                    <li>Your iOS version</li>
+                    <li>App version (found in Settings)</li>
+                    <li>Any error messages you see</li>
+                </ul>
+            </div>
+
+            <p>Send your bug reports to: <a href="mailto:fulora.dev@gmail.com" style="color: #667eea; text-decoration: none; font-weight: 600;">fulora.dev@gmail.com</a></p>
+        </section>
+
+        <section>
+            <h2>Feature Requests</h2>
+            <p>We love hearing from our users! If you have ideas for new features or improvements, please share them with us at <a href="mailto:fulora.dev@gmail.com" style="color: #667eea; text-decoration: none; font-weight: 600;">fulora.dev@gmail.com</a>.</p>
+        </section>
+
+        <section>
+            <h2>Additional Resources</h2>
+            <div class="links">
+                <a href="/privacy-policy.html" class="link-button">Privacy Policy</a>
+                <a href="/terms-of-use.html" class="link-button secondary">Terms of Use</a>
+                <a href="/index.html" class="link-button">Home</a>
+            </div>
+        </section>
+
+        <section>
+            <h2>App Requirements</h2>
+            <div class="info-box">
+                <p><strong>System Requirements:</strong></p>
+                <ul>
+                    <li>iOS 17.0 or later</li>
+                    <li>Compatible with iPhone and iPad</li>
+                    <li>Internet connection required for sync features</li>
+                </ul>
+            </div>
+        </section>
+
+        <div class="footer">
+            <p><strong>Fulora</strong> - Your Reading Companion</p>
+            <p style="margin-top: 10px;">© 2026 Fulora. All rights reserved.</p>
+            <p style="margin-top: 5px;">Contact: <a href="mailto:fulora.dev@gmail.com" style="color: #667eea; text-decoration: none;">fulora.dev@gmail.com</a></p>
+        </div>
+    </div>
+</body>
+</html>
